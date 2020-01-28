@@ -43,6 +43,7 @@
     <property name="cursive.last.file.extension.C\:/Users/Jake612/IdeaProjects/Comp590-Assignment1/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cli-demo" />
   </component>
+  <component name="ReplState" timestamp="1580244722973">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager">
     <configuration name="REPL" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <module name="Comp590-Assignment1" />
