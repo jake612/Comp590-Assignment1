@@ -8,7 +8,7 @@
   (let [level (Integer/parseInt level)]
     (if (> level -1)
       (do
-        (print (str/join " " (map #(/ (! level) (* (! %) (! (- level %)))) (range (+ level 1))))))
+        (println (str/join " " (map #(/ (! level) (* (! %) (! (- level %)))) (range (+ level 1))))))
       (println "invalid input"))
     )
   )
@@ -20,9 +20,9 @@
 
 (defn -main [& args]
   (cond
-    (= 0 (count args)) (do (print "invalid input"))
+    (= 0 (count args)) (do (println "invalid input"))
     (= (first args) "pascal") (pascal (nth args 1))
     (= (first args) "write-roman") (write-roman (rest args))
     (= (first args) "read-roman") (read-roman (rest args))
-    :else (do (print "invalid input"))
+    :else (do (println "invalid input"))
     ))
