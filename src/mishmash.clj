@@ -4,14 +4,19 @@
 
 (defn ! [x] (reduce * 1 (range 1 (inc x))))
 
-(defn pascal [level]
-  (let [level (Integer/parseInt level)]
-    (if (> level -1)
-      (do
-        (println (str/join " " (map #(/ (! level) (* (! %) (! (- level %)))) (range (+ level 1))))))
-      (println "invalid input"))
-    )
-  )
+(defn pascal [input]
+  (try
+    (let [
+          level (Integer/parseInt input)
+          ]
+      (if (> level -1)
+        (do
+          (println (str/join " " (map #(/ (! level) (* (! %) (! (- level %)))) (range (+ level 1))))))
+        (println "invalid input"))
+      )
+     (catch Exception e
+       (do (println "invalid exc")))))
+
 
 
 (defn write-roman [num])
@@ -20,7 +25,7 @@
 
 (defn -main [& args]
   (cond
-    (= 0 (count args)) (do (println "invalid input"))
+    (not= (count args) 2) (do (println "invalid input"))
     (= (first args) "pascal") (pascal (nth args 1))
     (= (first args) "write-roman") (write-roman (rest args))
     (= (first args) "read-roman") (read-roman (rest args))
