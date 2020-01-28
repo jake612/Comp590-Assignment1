@@ -28,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WzaLFJ3C3SWL9gO6bBD1kt9m12" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cursive.last.file.extension.C\:/Users/Jake612/IdeaProjects/Comp590-Assignment1/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cli-demo" />
   </component>
@@ -79,9 +83,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="166" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580154902271" />
-    <state x="465" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1580162332293">
+    <state x="465" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1580244019024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580162332293" />
+    <state x="465" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580244019024" />
   </component>
 </project>

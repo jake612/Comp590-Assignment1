@@ -20,7 +20,9 @@
 
 (defn -main [& args]
   (cond
+    (= 0 (count args)) (do (print "invalid input"))
     (= (first args) "pascal") (pascal (nth args 1))
     (= (first args) "write-roman") (write-roman (rest args))
     (= (first args) "read-roman") (read-roman (rest args))
+    :else (do (print "invalid input"))
     ))
