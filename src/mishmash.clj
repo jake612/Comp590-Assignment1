@@ -15,7 +15,7 @@
         (println "invalid input"))
       )
      (catch Exception e
-       (do (println "invalid exc")))))
+       (do (println "invalid input")))))
 
 
 
