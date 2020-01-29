@@ -31,9 +31,31 @@
      (catch Exception e
        (do (println "invalid input")))))
 
+(defn num-to-roman [[total string] tuple]
+  (let [char-val (val tuple)]
+    (if (and (>= total char-val) (> total 0))
+      [(- total (* (Math/floor (/ total char-val)) char-val))
+       (apply str string (repeat (Math/floor (/ total char-val)) (name (key tuple))))]
+      [total string]))
 
+  )
 
-(defn write-roman [num])
+(defn write-roman [num]
+  (try
+    (let [
+          num (re-matches #"[1-9]+" (first num))
+          int-num (Integer/parseInt num)
+          comparator (into
+                       (sorted-map-by
+                         (fn [key1 key2]
+                           (compare (get numeral-chart key2) (get numeral-chart key1)))) numeral-chart)
+          ]
+      (if (< int-num 4000)
+        (println (second (reduce num-to-roman [int-num ""] comparator)))
+        (println "invalid input"))
+      )
+    (catch Exception e (println "invalid input")))
+  )
 
 (defn numeral-reader [[total past-char] char]
   (try
@@ -71,7 +93,5 @@
     (= (first args) "pascal") (pascal (nth args 1))
     (= (first args) "write-roman") (write-roman (rest args))
     (= (first args) "read-roman") (read-roman (rest args))
-    :else (do (println "invalid input"))
-    ))
-
-(re-matches #"[IVXLMCD]+" "IVV")
+    :else (println "invalid input"))
+    )

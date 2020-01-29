@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="92207272-3acd-4082-a258-ba3ccdaeff70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nrepl-port" beforeDir="false" afterPath="$PROJECT_DIR$/.nrepl-port" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mishmash.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/mishmash.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +43,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Clojure" />
     <property name="cursive.last.file.extension.C\:/Users/Jake612/IdeaProjects/Comp590-Assignment1/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cli-demo" />
   </component>
-  <component name="ReplState" timestamp="1580314661245">{:repl-history {:ide [], :local [{:command &quot;(ns mishmash)&quot;, :offset 13, :ns &quot;mishmash&quot;} {:command &quot;(require '[clojure.string :as str])&quot;, :offset 35, :ns &quot;mishmash&quot;} {:command &quot;(defn ! [x] (reduce * 1 (range 1 (inc x))))&quot;, :offset 43, :ns &quot;mishmash&quot;} {:command &quot;(defn pascal1 [input]\n  (try\n    (let [\n          level (Integer/parseInt input)\n          ]\n      (if (&gt; level -1)\n        (do\n          (println (str/join \&quot; \&quot; (map #(/ (! level) (* (! %) (! (- level %)))) (range (+ level 1))))))\n        (println \&quot;invalid input\&quot;))\n      )\n     (catch Exception e\n       (do (println \&quot;invalid exc\&quot;)))))&quot;, :offset 336, :ns &quot;mishmash&quot;} {:command &quot;(pascal1 \&quot;3\&quot;)&quot;, :offset 11, :ns &quot;mishmash&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1580318240529">{:repl-history {:ide [], :local [{:command &quot;(ns mishmash)&quot;, :offset 13, :ns &quot;mishmash&quot;} {:command &quot;(require '[clojure.string :as str])&quot;, :offset 35, :ns &quot;mishmash&quot;} {:command &quot;(defn ! [x] (reduce * 1 (range 1 (inc x))))&quot;, :offset 43, :ns &quot;mishmash&quot;} {:command &quot;(defn pascal1 [input]\n  (try\n    (let [\n          level (Integer/parseInt input)\n          ]\n      (if (&gt; level -1)\n        (do\n          (println (str/join \&quot; \&quot; (map #(/ (! level) (* (! %) (! (- level %)))) (range (+ level 1))))))\n        (println \&quot;invalid input\&quot;))\n      )\n     (catch Exception e\n       (do (println \&quot;invalid exc\&quot;)))))&quot;, :offset 336, :ns &quot;mishmash&quot;} {:command &quot;(pascal1 \&quot;3\&quot;)&quot;, :offset 11, :ns &quot;mishmash&quot;}], :remote []}}</component>
   <component name="RunManager">
     <configuration name="REPL" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <module name="Comp590-Assignment1" />
