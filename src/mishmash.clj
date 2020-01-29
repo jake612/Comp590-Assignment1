@@ -52,11 +52,15 @@
 (defn read-roman [numerals]
   (try
     (let [
-          result (first (reduce numeral-reader [0, "O"] (str/split  (first numerals) #"")))
+          numerals (re-matches #"[IVXLMCD]+" (first numerals))
           ]
-      (if (some? result)
-          (println result)))
-    (catch Exception e (println "invalid input")))
+      (if (some? numerals)
+        (println (first (reduce numeral-reader [0, "O"] (str/split numerals #""))))
+        (println "invalid input")
+        )
+
+      )
+    (catch Exception e "invalid input"))
   )
 
 
@@ -69,3 +73,5 @@
     (= (first args) "read-roman") (read-roman (rest args))
     :else (do (println "invalid input"))
     ))
+
+(re-matches #"[IVXLMCD]+" "IVV")
