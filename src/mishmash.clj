@@ -43,7 +43,7 @@
 (defn write-roman [num]
   (try
     (let [
-          num (re-matches #"[1-9]+" (first num))
+          num (re-matches #"[0-9]+" (first num))
           int-num (Integer/parseInt num)
           comparator (into
                        (sorted-map-by
