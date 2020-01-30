@@ -50,7 +50,7 @@
                          (fn [key1 key2]
                            (compare (get numeral-chart key2) (get numeral-chart key1)))) numeral-chart)
           ]
-      (if (< int-num 4000)
+      (if (and (> int-num 0) (< int-num 4000))
         (println (second (reduce num-to-roman [int-num ""] comparator)))
         (println "invalid input"))
       )
